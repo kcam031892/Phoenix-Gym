@@ -1,0 +1,19 @@
+{
+  "name": "phoenix-gym",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn watch:tailwind\" \"yarn watch:server\" ",
+    "watch:tailwind": "npx tailwindcss -i ./src/main.css -o ./src/tailwind.css --watch",
+    "watch:server": "lite-server --baseDir=src"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  }
+}

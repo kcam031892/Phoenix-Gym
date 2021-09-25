@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero {
+    @apply relative z-20;
+  }
+  .hero::before {
+    content: '';
+    background: url('./assets/hero.jpg') no-repeat;
+    background-position: -40rem center;
+    @apply absolute top-0 left-0 w-full h-full opacity-60 z-[-9999];
+  }
+
+  .btn {
+    @apply bg-theme-accent 
+    text-theme-light 
+    py-3 
+    px-8 
+    text-center font-bold
+    tracking-wide
+    rounded-xl  
+    border-2 border-transparent 
+    transition-all ease-in-out duration-700;
+  }
+
+  .btn:hover {
+    @apply bg-transparent border-2 border-theme-accent;
+  }
+
+  .section-title {
+    @apply pb-2  text-lg font-bold text-theme-accent border-b-2 inline-block sm:text-2xl;
+  }
+
+  .card {
+    @apply py-9 
+    bg-theme-secondary bg-opacity-20 
+    rounded-2xl
+    border-[1px] border-theme-light-secondary
+    shadow-card
+    bg-clip-padding;
+  }
+}
+
+@screen sm {
+  .hero::before {
+    @apply bg-right bg-cover;
+  }
+}

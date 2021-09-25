@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./tailwind.css" />
+    <title>Phoenix Gym | Build your muscle.</title>
+  </head>
+  <body>
+    <div class="min-h-screen w-full flex flex-col bg-theme-primary">
+      <header class="flex justify-between items-center py-4 px-6 sm:container sm:mx-auto sm:px-2">
+        <div class="relative z-50">
+          <a href="#">
+            <h1 class="text-theme-light text-xl font-bold">Phoenix <span class="text-theme-accent">Gym</span></h1>
+          </a>
+        </div>
+        <button class="nav-menu relative z-50">
+          <i class="fas fa-bars fa-lg text-theme-light"></i>
+        </button>
+        <nav
+          id="nav"
+          class="fixed -top-full left-0 w-full h-screen bg-theme-primary z-40 transition-all ease-in-out duration-300"
+        ></nav>
+      </header>
+
+      <!-- Hero -->
+      <div class="hero flex-1">
+        <div class="w-full absolute left-0 bottom-[150px]">
+          <div class="px-6 flex flex-col justify-end items-center">
+            <h1 class="text-theme-light text-3xl font-bold sm:text-6xl">
+              Phoenix <span class="text-theme-accent">Gym</span>
+            </h1>
+            <h2 class="text-xl text-gray-300 mt-1 sm:text-2xl">Get fitness today.</h2>
+            <button class="btn w-72 mt-6">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section: fitness -->
+    <section class="bg-gradient-to-b from-theme-primary via-theme-primary to-theme-secondary">
+      <div class="container py-5 px-6 sm:mx-auto sm:px-2">
+        <div class="flex justify-center items-center">
+          <h1 class="section-title">Life's Beautiful with Fitness.</h1>
+        </div>
+        <div class="mt-4 grid grid-cols-2 grid-rows-layout grid-flow-row sm:grid-cols-3 sm:grid-rows-[repeat(3,200px)]">
+          <img
+            src="./assets/image1.jpg"
+            class="
+              object-cover
+              filter
+              contrast-150
+              w-full
+              h-full
+              col-span-2
+              sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-3
+            "
+            alt=""
+          />
+          <img src="./assets/image2.jpg" class="object-cover w-full h-full" alt="" />
+          <img src="./assets/image3.jpg" class="object-cover w-full h-full" alt="" />
+
+          <img
+            src="./assets/image4.jpg"
+            class="
+              object-cover
+              w-full
+              h-96
+              col-span-2
+              sm:h-full sm:object-cover sm:col-start-1 sm:col-end-4 sm:row-start-3 sm:row-end-5
+            "
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Section: Statistics -->
+    <section id="statistics" class="bg-gradient-to-bl from-theme-secondary via-theme-secondary to-theme-primary">
+      <div class="container py-5 px-6 sm:mx-auto sm:px-2">
+        <div class="flex justify-center items-center">
+          <h1 class="section-title">Our Statistics.</h1>
+        </div>
+        <div class="grid grid-cols-1 gap-3 mt-5 sm:grid-cols-3">
+          <div class="card flex justify-end items-center flex-col gap-2">
+            <h1 class="text-8xl text-[#FFBA08] font-bold counter" data-count="23">0</h1>
+            <h3 class="text-theme-light-gray text-3xl">Members</h3>
+          </div>
+          <div class="card flex justify-end items-center flex-col gap-2">
+            <h1 class="text-8xl text-[#F71735] font-bold counter" data-count="42">0</h1>
+            <h3 class="text-theme-light-gray text-3xl">Coaches</h3>
+          </div>
+          <div class="card flex justify-end items-center flex-col gap-2">
+            <h1 class="text-8xl text-[#34D1BF] font-bold counter" data-count="20">0</h1>
+            <h3 class="text-theme-light-gray text-3xl">Equipments</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: subscribe -->
+    <section class="bg-gradient-to-tr from-theme-secondary to-theme-primary">
+      <div class="container py-8 px-6 sm:mx-auto sm:px-2">
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <h1 class="text-2xl text-center font-bold text-theme-light sm:self-center sm:text-4xl sm:text-left">
+            Subcribe now for 10% discount
+          </h1>
+          <button class="btn">Subscribe Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#05131E]">
+      <div class="container py-8 px-6 sm:mx-auto sm:px-2">
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div class="pb-4 border-b-[1px] border-theme-light-gray sm:border-transparent">
+            <h1 class="text-2xl text-theme-light font-bold">Phoenix <span class="text-theme-accent">Gym</span></h1>
+            <p class="text-sm text-theme-light-gray mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut massa a nisl suscipit pellentesque in at
+              ipsum. Aliquam erat volutpat. Maecenas finibus est a nulla dictum porttitor. Nam eget pharetra ex, in
+              malesuada tellus. Phasellus et nibh quis arcu auctor maximus. Curabitur metus nibh, pharetra a facilisis
+              at
+            </p>
+          </div>
+          <div
+            class="
+              flex
+              justify-center
+              items-center
+              flex-col
+              pb-4
+              border-b-[1px] border-theme-light-gray
+              sm:border-transparent sm:justify-start
+            "
+          >
+            <ul class="flex flex-col gap-2">
+              <li class="text-center">
+                <a href="#" class="text-md text-theme-accent font-bold">home</a>
+              </li>
+              <li class="text-center">
+                <a href="#" class="text-md text-theme-light font-bold">what can we do</a>
+              </li>
+              <li class="text-center">
+                <a href="#" class="text-md text-theme-light font-bold">privacy & policy</a>
+              </li>
+              <li class="text-center">
+                <a href="#" class="text-md text-theme-light font-bold">location</a>
+              </li>
+              <li class="text-center">
+                <a href="#" class="text-md text-theme-light font-bold">pricing</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="text-2xl text-theme-light font-bold">Contact Us</h1>
+            <div class="mt-2 flex flex-col gap-4 pl-2">
+              <div class="flex items-center gap-4">
+                <i class="fas fa-map-marker-alt fa-lg text-theme-light"></i>
+                <p class="text-base text-theme-light">Manila, Philippines</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="fas fa-phone fa-lg text-theme-light"></i>
+                <p class="text-base text-theme-light">92-234-3243</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <i class="far fa-envelope fa-lg text-theme-light"></i>
+                <p class="text-base text-theme-light">phoenixgym@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 flex justify-center items-center gap-6">
+          <a
+            href="https://www.facebook.com"
+            class="text-theme-light text-5xl sm:text-6xl transition-all ease-in duration-100 hover:text-theme-accent"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.twitter.com"
+            class="text-theme-light text-5xl sm:text-6xl transition-all ease-in duration-100 hover:text-theme-accent"
+          >
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            class="text-theme-light text-5xl sm:text-6xl transition-all ease-in duration-100 hover:text-theme-accent"
+          >
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </div>
+      </div>
+      <div class="bg-[#030C12] py-12">
+        <h1 class="text-xl text-theme-accent text-center font-bold sm:text-3xl">
+          All Right Reserved - Phoenix Gym &copy; 2021
+        </h1>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
